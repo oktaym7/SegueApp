@@ -17,21 +17,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//         Lifecycle
         print("viewDidLoad function called")
-        
-        
-        if let name = userName {
-             print(name)
-        }
-        
-        
-        guard let name = userName else {
-            return
-        }
-        
-        
-        
+
+        print(userName)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -51,8 +39,6 @@ class ViewController: UIViewController {
     }
     
     
-    
-
     @IBAction func nextClicked(_ sender: Any) {
         userName = nameText.text!
         //performSegue(withIdentifier: "toSecondVC", sender: nil)
